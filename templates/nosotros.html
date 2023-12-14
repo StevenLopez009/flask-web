@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog de cafe</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub&family=Lobster&family=M+PLUS+1+Code:wght@100;300&family=Noto+Serif:ital,wght@1,400;1,700&family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="/">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              Blog<span class="logo__bold">DeCafe</span>
+            </h1>
+          </a>
+          <nav class="navegacion">
+            <a href="{{ url_for('nosotros') }}" class="navegacion__enlace"
+              >Nosotros</a
+            >
+            <a href="{{ url_for('cursos') }}" class="navegacion__enlace"
+              >Cursos</a
+            >
+            <a href="{{ url_for('contacto') }}" class="navegacion__enlace"
+              >Contacto</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="header__texto">
+        <h2 class="no-margin">Blog de Cafe con consejos y cursos</h2>
+        <p class="no-margin">Aprende de los expertos</p>
+      </div>
+    </header>
+    <main class="contenedor">
+      <h3 class="centrar-texto">Sobre Nosotros</h3>
+      <div class="sobre-nosotros">
+        <div class="sobre-nosotros-__img">
+          <img
+            src="{{ url_for('static', filename='img/nosotros.jpg') }}"
+            alt="imagen nosotros"
+          />
+        </div>
+        <div class="sobre-nosotros__texto">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            tempora, consectetur dignissimos maiores odio eveniet fuga suscipit
+            nesciunt quia recusandae explicabo error perferendis amet
+            reprehenderit? Animi voluptas laboriosam velit blanditiis?Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Odit similique
+            ipsa eius excepturi odio exercitationem ratione, molestiae dolores
+            illo reiciendis maiores amet possimus recusandae ducimus, obcaecati
+            vitae deleniti ipsum voluptatem.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dolor
+            sed magni harum quisquam. Ab repudiandae itaque temporibus illo est
+            adipisci soluta consequatur iusto? Libero aliquid fuga consequuntur
+            illo quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Neque repellat atque eos vero mollitia dolor, accusantium, error
+            suscipit voluptates quibusdam unde. Iste, molestias quos quo hic
+            omnis saepe nisi corrupti?
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contenedor">
+          <div class="barra">
+            <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">
+                Blog<span class="logo__bold">DeCafe</span>
+              </h1>
+            </a>
+            <nav class="navegacion">
+              <a href="{{ url_for('nosotros') }}" class="navegacion__enlace"
+                >Nosotros</a
+              >
+              <a href="{{ url_for('cursos') }}" class="navegacion__enlace"
+                >Cursos</a
+              >
+              <a href="{{ url_for('contacto') }}" class="navegacion__enlace"
+                >Contacto</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

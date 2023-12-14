@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog de cafe</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub&family=Lobster&family=M+PLUS+1+Code:wght@100;300&family=Noto+Serif:ital,wght@1,400;1,700&family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <a class="logo" href="/">
+            <h1 class="logo__nombre no-margin centrar-texto">
+              Blog<span class="logo__bold">DeCafe</span>
+            </h1>
+          </a>
+          <nav class="navegacion">
+            <a href="{{ url_for('nosotros') }}" class="navegacion__enlace"
+              >Nosotros</a
+            >
+            <a href="{{ url_for('cursos') }}" class="navegacion__enlace"
+              >Cursos</a
+            >
+            <a href="{{ url_for('contacto') }}" class="navegacion__enlace"
+              >Contacto</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="header__texto">
+        <h2 class="no-margin">Blog de Cafe con consejos y cursos</h2>
+        <p class="no-margin">Aprende de los expertos</p>
+      </div>
+    </header>
+    <main class="contenedor">
+      <h3 class="centrar-texto">Sobre Nosotros</h3>
+      <img
+        src="{{ url_for('static', filename='img/persona.jpg') }}"
+        alt="imagen de blog 1"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        temporibus ex voluptas, veritatis, aperiam animi, fuga aliquam sapiente
+        enim iste ipsum. Repellat sint expedita placeat aliquid, quae mollitia
+        quis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Mollitia doloremque labore nemo omnis porro quibusdam pariatur optio
+        deleniti! Omnis sint sunt, molestiae ipsa impedit aut repellendus minima
+        odio culpa nemo. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Modi voluptate explicabo quisquam eos fuga repellat itaque
+        nesciunt nisi accusantium doloribus at tempora id aperiam, similique
+        dolorem voluptatibus ex dicta ea.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        temporibus ex voluptas, veritatis, aperiam animi, fuga aliquam sapiente
+        enim iste ipsum. Repellat sint expedita placeat aliquid, quae mollitia
+        quis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Mollitia doloremque labore nemo omnis porro quibusdam pariatur optio
+        deleniti! Omnis sint sunt, molestiae ipsa impedit aut repellendus minima
+        odio culpa nemo. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Modi voluptate explicabo quisquam eos fuga repellat itaque
+        nesciunt nisi accusantium doloribus at tempora id aperiam, similique
+        dolorem voluptatibus ex dicta ea.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        temporibus ex voluptas, veritatis, aperiam animi, fuga aliquam sapiente
+        enim iste ipsum. Repellat sint expedita placeat aliquid, quae mollitia
+        quis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Mollitia doloremque labore nemo omnis porro quibusdam pariatur optio
+        deleniti! Omnis sint sunt, molestiae ipsa impedit aut repellendus minima
+        odio culpa nemo. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Modi voluptate explicabo quisquam eos fuga repellat itaque
+        nesciunt nisi accusantium doloribus at tempora id aperiam, similique
+        dolorem voluptatibus ex dicta ea.
+      </p>
+    </main>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contenedor">
+          <div class="barra">
+            <a class="logo" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">
+                Blog<span class="logo__bold">DeCafe</span>
+              </h1>
+            </a>
+            <nav class="navegacion">
+              <a href="{{ url_for('nosotros') }}" class="navegacion__enlace"
+                >Nosotros</a
+              >
+              <a href="{{ url_for('cursos') }}" class="navegacion__enlace"
+                >Cursos</a
+              >
+              <a href="{{ url_for('contacto') }}" class="navegacion__enlace"
+                >Contacto</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
